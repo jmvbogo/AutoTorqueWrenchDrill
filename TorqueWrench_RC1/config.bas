@@ -1,0 +1,35 @@
+' TorqueWrenchController - Config (RC1)
+
+' --- Motor & Physics ---
+Kt_motor = 0.05         ' N*m per Amp (Default, will be overwritten by EEPROM)
+gear_ratio = 20.0       ' Gearbox reduction
+efficiency = 0.9        ' Gearbox efficiency
+R_shunt = 0.01          ' Ohms
+
+' --- ADC & Control ---
+Vref = 3.3              ' ADC Reference Voltage
+ADC_FILTER_SIZE = 8     ' Moving Average Samples
+PWM_max = 255
+PWM_min = 0
+
+' --- Safety Thresholds ---
+I_max = 30.0            ' Max Amps
+I_stall_threshold = 24.0 ' Stall detection (80% of I_max)
+angle_stall_limit = 5   ' Degrees
+temp_max = 80.0         ' Celsius
+
+' --- Memory Map (EEPROM) ---
+ADDR_KT_MOTOR = 100
+ADDR_ADC_OFFSET = 101
+ADDR_SERIAL_NUM = 102
+ADDR_FIRMWARE_CRC = 103
+ADDR_LOG_START = 200    ' Start of Data Log area
+
+' --- Scaling Factors ---
+EEPROM_FLOAT_SCALE = 1000
+
+' --- System Settings ---
+CALIBRATION_ENABLED = 1
+BOOTLOADER_START_ADDR = 0x3000 ' Hardware specific address
+DIM TorqueSpecs(10)
+DIM AngleSpecs(10)
