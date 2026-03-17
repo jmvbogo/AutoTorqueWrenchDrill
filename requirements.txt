@@ -1,0 +1,8 @@
+pyserial
+numpy
+scipy
+pandas
+pytest
+flask
+some-hardware-control-library
+another-testing-library
