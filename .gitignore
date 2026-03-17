@@ -1,0 +1,28 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.vscode/
+logs/
+calibration_data/
+test_results/
+
+# Firmware
+firmware/build/
+
+# Logs
+*.log
+
+# macOS
+.DS_Store
+
+# Backup Files
+*.bak
+
+# Executables
+*.exe
+*.obj
+*.com
+
+# Thumbnails
+Thumbs.db
